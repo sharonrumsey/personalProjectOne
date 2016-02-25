@@ -4,6 +4,9 @@
   "description": "project one for dev academy",
   "main": "server.js",
   "scripts": {
+    "watch": "watchify views/index.js -o -v",
+    "build": "browserify views/index.js -o",
+    "start": "npm run watch & nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sharon Rumsey",
@@ -18,5 +21,10 @@
     "jade": "^1.11.0",
     "nodemon": "^1.9.0",
     "xtend": "^4.0.1"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "nodemon": "^1.9.0",
+    "watchify": "^3.7.0"
   }
 }

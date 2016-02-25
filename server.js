@@ -22,6 +22,9 @@ app.get('/h01', function(req, res) {
 app.get('/h02', function(req, res) {
   res.render('h02.jade', {title: 'Two'});
 });
+app.get('/h03', function(req, res) {
+  res.render('h03.jade', {title: 'Three'});
+});
 
 app.use('/profile',stormpath.loginRequired,require('./profile')());
 
