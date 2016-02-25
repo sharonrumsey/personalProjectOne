@@ -1,2 +1,2 @@
 # personalProjectOne
-work on personal project with webstorm
+work on personal project with stormpath
